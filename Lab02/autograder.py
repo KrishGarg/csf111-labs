@@ -68,9 +68,9 @@ def autoeval(code_path, testcases_path, flag=None):
 
     # Compiles C code
     # Compilation errors need to be handled here
-    if flag == "-i":
+    if flag=="-i":
         compilation_process = subprocess.run(
-            "gcc " + code_path + " -w -lm",
+            "gcc " + code_path+" -w",
             text=True,
             timeout=5,
             shell=True,
@@ -78,7 +78,7 @@ def autoeval(code_path, testcases_path, flag=None):
         )
     else:
         compilation_process = subprocess.run(
-            "gcc " + code_path + " -lm",
+            "gcc " + code_path,
             text=True,
             timeout=5,
             shell=True,
@@ -86,9 +86,7 @@ def autoeval(code_path, testcases_path, flag=None):
         )
 
     compilation_error_occurred = False
-    if not os.path.exists(
-        os.path.join(os.getcwd(), "a.out")
-    ):  # If compilation error occurs
+    if not os.path.exists(os.path.join(os.getcwd(), "a.exe")):  # If compilation error occurs
         if flag == None or flag == "-t":  # Student mode and Test Case Generator mode
             compilation_error_occurred = True
             print("Compilation Error:\n")
@@ -123,7 +121,7 @@ def autoeval(code_path, testcases_path, flag=None):
 
             # Terminate process after 5 seconds
             completed_process = subprocess.run(
-                "./a.out",
+                ".\\a.exe",
                 capture_output=True,
                 input=process_stdin,
                 text=True,
@@ -131,6 +129,7 @@ def autoeval(code_path, testcases_path, flag=None):
                 shell=True,
                 check=False,
             )
+            # print(completed_process)
 
             process_stdout = completed_process.stdout
 
@@ -218,8 +217,8 @@ def autoeval(code_path, testcases_path, flag=None):
         print("\nFinal Score:", score, "/", testcase_num)
 
     # Deletes a.out after evaluation
-    if os.path.exists("a.out"):
-        os.remove("a.out")
+    if os.path.exists("a.exe"):
+        os.remove("a.exe")
 
     return score
 
