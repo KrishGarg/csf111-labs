@@ -1,0 +1,40 @@
+{
+  "test_cases": [
+    {
+      "id": 1,
+      "time_out": 2,
+      "input": "4\n25.943 17.216 32.134\n25.621 17.698 32.432\n25.926 18.042 32.998\n25.422 17.995 33.111\n1\n1",
+      "output": "Enter the number of setups: \nSetup 1\nEnter the Sector 1, Sector 2, and Sector 3 times\nSetup 2\nEnter the Sector 1, Sector 2, and Sector 3 times\nSetup 3\nEnter the Sector 1, Sector 2, and Sector 3 times\nSetup 4\nEnter the Sector 1, Sector 2, and Sector 3 times\nChoose the operation you want to perform:\n\t1. Find the setup with the best time set in a given sector,\n\t2. Find the setup with the best lap time.\n\nEnter 1 or 2: \n\nEnter a sector number: \nThe fastest Sector 1 time:\nSetup 4: 25.422\n"
+    },
+    {
+      "id": 2,
+      "time_out": 2,
+      "input": "1\n26.412 17.721 31.015\n1\n2\n",
+      "output": "Enter the number of setups: \nSetup 1\nEnter the Sector 1, Sector 2, and Sector 3 times\nChoose the operation you want to perform:\n\t1. Find the setup with the best time set in a given sector,\n\t2. Find the setup with the best lap time.\n\nEnter 1 or 2: \n\nEnter a sector number: \nThe fastest Sector 2 time:\nSetup 1: 17.721\n"
+    },
+    {
+      "id": 3,
+      "time_out": 2,
+      "input": "1\n26.521 17.832 31.048\n2\n",
+      "output": "Enter the number of setups: \nSetup 1\nEnter the Sector 1, Sector 2, and Sector 3 times\nChoose the operation you want to perform:\n\t1. Find the setup with the best time set in a given sector,\n\t2. Find the setup with the best lap time.\n\nEnter 1 or 2: \n\nThe fastest lap:\nSetup 1: 1:15.401\n"
+    },
+    {
+      "id": 5,
+      "time_out": 2,
+      "input": "2\n26.413 17.725 31.014\n26.389 17.751 31.202\n1\n3\n",
+      "output": "Enter the number of setups: \nSetup 1\nEnter the Sector 1, Sector 2, and Sector 3 times\nSetup 2\nEnter the Sector 1, Sector 2, and Sector 3 times\nChoose the operation you want to perform:\n\t1. Find the setup with the best time set in a given sector,\n\t2. Find the setup with the best lap time.\n\nEnter 1 or 2: \n\nEnter a sector number: \nThe fastest Sector 3 time:\nSetup 1: 31.014\n"
+    },
+    {
+      "id": 7,
+      "time_out": 2,
+      "input": "3\n26.501 17.850 31.049\n26.472 17.818 31.210\n26.488 17.780 31.315\n2\n",
+      "output": "Enter the number of setups: \nSetup 1\nEnter the Sector 1, Sector 2, and Sector 3 times\nSetup 2\nEnter the Sector 1, Sector 2, and Sector 3 times\nSetup 3\nEnter the Sector 1, Sector 2, and Sector 3 times\nChoose the operation you want to perform:\n\t1. Find the setup with the best time set in a given sector,\n\t2. Find the setup with the best lap time.\n\nEnter 1 or 2: \n\nThe fastest lap:\nSetup 1: 1:15.400\n"
+    },
+    {
+      "id": 8,
+      "time_out": 2,
+      "input": "10\n25.812 17.143 32.415\n26.478 17.916 31.984\n25.937 17.234 32.128\n26.314 17.845 31.609\n25.867 17.211 32.263\n26.007 17.438 31.894\n25.958 17.179 32.447\n26.123 17.507 31.861\n25.746 17.258 32.302\n26.208 17.619 31.693\n2\n",
+      "output": "Enter the number of setups: \nSetup 1\nEnter the Sector 1, Sector 2, and Sector 3 times\nSetup 2\nEnter the Sector 1, Sector 2, and Sector 3 times\nSetup 3\nEnter the Sector 1, Sector 2, and Sector 3 times\nSetup 4\nEnter the Sector 1, Sector 2, and Sector 3 times\nSetup 5\nEnter the Sector 1, Sector 2, and Sector 3 times\nSetup 6\nEnter the Sector 1, Sector 2, and Sector 3 times\nSetup 7\nEnter the Sector 1, Sector 2, and Sector 3 times\nSetup 8\nEnter the Sector 1, Sector 2, and Sector 3 times\nSetup 9\nEnter the Sector 1, Sector 2, and Sector 3 times\nSetup 10\nEnter the Sector 1, Sector 2, and Sector 3 times\nChoose the operation you want to perform:\n\t1. Find the setup with the best time set in a given sector,\n\t2. Find the setup with the best lap time.\n\nEnter 1 or 2: \n\nThe fastest lap:\nSetup 3: 1:15.299\n"
+    }
+  ]
+}
