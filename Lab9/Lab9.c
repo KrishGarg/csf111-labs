@@ -138,34 +138,26 @@ void longest_word(char *s)
 // TODO: Complete the function header - have appropriate arguments to match the function call in main()
 void cal_sick_leaves(int *ptrLeaves, int n, int *mode, double *avg)
 {
-  int freqMap[32];
-
-  for (int i = 0; i < 32; i++)
-  {
-    freqMap[i] = 0;
-  }
-
-  double sum = 0;
-
+  int longest = 0;
   for (int i = 0; i < n; i++)
   {
-    sum += *ptrLeaves;
-    freqMap[*ptrLeaves]++;
-    ptrLeaves++;
-  }
-
-  int max = 0;
-
-  for (int i = 0; i < 32; i++)
-  {
-    if (freqMap[i] >= max)
+    int cnt = 0;
+    for (int j = i; j < n; j++)
     {
-      max = freqMap[i];
-      *mode = i;
+      if (ptrLeaves[i] == ptrLeaves[j])
+      {
+        cnt++;
+      }
+    }
+
+    if (cnt >= longest)
+    {
+      longest = cnt;
+      *mode = ptrLeaves[i];
     }
   }
 
-  *avg = sum / n;
+  *avg = ((double)(ptrLeaves[0] + ptrLeaves[1] + ptrLeaves[2] + ptrLeaves[3] + ptrLeaves[4] + ptrLeaves[5])) / 6;
 }
 
 /**
@@ -189,20 +181,20 @@ emp get_input()
 
 int main()
 {
-  emp e1 = get_input();
-  emp e2 = get_input();
+  // emp e1 = get_input();
+  // emp e2 = get_input();
 
-  /*
+  // /*
   // UNCOMMENT this block if you want to test your code quickly with different values.
   // Keep in mind to COMMENT this block once you are done with testing, else test cases WILL NOT PASS.
   // Sample inputs are given. Change it to test different cases.
   // Note: If you are hardcoding values for testing, you need to comment out the get_input statements for e1 and e2
   emp e1 = {1, 10000, "BITS_Pilani.", {1, 2, 3, 1, 2, 1}};
-  emp e2 = {2, 20000, "Its_Magic.", {1, 1, 2, 2, 3, 3}};
+  emp e2 = {2, 20000, "Its_Magic.", {1, 2, 2, 1, 2, 1}};
 
   display(e1);
   display(e2);
-  */
+  // */
 
   emp max = max_salary(&e1, &e2);
 
