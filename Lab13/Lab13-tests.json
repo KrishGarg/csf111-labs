@@ -1,0 +1,28 @@
+{
+  "test_cases": [
+    {
+      "id": 1,
+      "time_out": 2,
+      "input": "1\n",
+      "output": "This program supports three operations:\n\t1. Display the ASCII to Braille character map\n\t2. Translate a single ASCII character to Braille\n\t3. Translate a text file to Braille\nEnter your option: a: .-----\nb: ..----\nc: .--.--\nd: .--..-\ne: .---.-\nf: ..-.--\ng: ..-..-\nh: ..--.-\ni: -.-.--\nj: -.-..-\nk: .-.---\nl: ...---\nm: .-..--\nn: .-...-\no: .-.-.-\np: ....--\nq: .....-\nr: ...-.-\ns: -...--\nt: -....-\nu: .-.--.\nv: ...--.\nw: -.-...\nx: .-..-.\ny: .-....\nz: .-.-..\n0: -.-..-\n1: .-----\n2: ..----\n3: .--.--\n4: .--..-\n5: .---.-\n6: ..-.--\n7: ..-..-\n8: ..--.-\n9: -.-.--\n : ------\n"
+    },
+    {
+      "id": 2,
+      "time_out": 2,
+      "input": "2\np\n",
+      "output": "This program supports three operations:\n\t1. Display the ASCII to Braille character map\n\t2. Translate a single ASCII character to Braille\n\t3. Translate a text file to Braille\nEnter your option: Enter a letter or a digit: \n'p' in Braille:\n..\n.-\n.-\n\n"
+    },
+    {
+      "id": 3,
+      "time_out": 2,
+      "input": "3\ninput.txt\n",
+      "output": "This program supports three operations:\n\t1. Display the ASCII to Braille character map\n\t2. Translate a single ASCII character to Braille\n\t3. Translate a text file to Braille\nEnter your option: Enter valid file path: \nBraille version:\n..\n--\n--\n\n--\n--\n--\n\n..\n.-\n.-\n\n"
+    },
+    {
+      "id": 4,
+      "time_out": 2,
+      "input": "3\nwrongfilename.txt\ninput.txt\n",
+      "output": "This program supports three operations:\n\t1. Display the ASCII to Braille character map\n\t2. Translate a single ASCII character to Braille\n\t3. Translate a text file to Braille\nEnter your option: Enter valid file path: wrongfilename.txt: No such file.\nEnter valid file path: \nBraille version:\n..\n--\n--\n\n--\n--\n--\n\n..\n.-\n.-\n\n"
+    }
+  ]
+}
