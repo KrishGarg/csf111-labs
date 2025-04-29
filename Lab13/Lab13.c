@@ -4,6 +4,8 @@ NOTE: the '\n' are very precise and have to be exactly like as in this file for 
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 
 /**
  * @brief Returns the appropriate index for the given ASCII character in the ASCII to Braille map. Indexes 0-25 for letters 'a'-'z', 0-8 for digits '1'-'9', index 9 for digit '0', 26 for ' ' (SPACE), and -1 for all other characters (that our translator does not handle).
@@ -50,6 +52,7 @@ char *ascii_to_braille(char ch, char *map[])
  */
 void print_braille(char ch, char *map[])
 {
+  ch = tolower(ch);
   if (!can_translate_to_braille(ch))
     return;
 
